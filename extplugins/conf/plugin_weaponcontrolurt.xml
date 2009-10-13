@@ -1,0 +1,42 @@
+<configuration plugin="weaponcontrolurt">
+  
+  <settings name="commands">
+    <!-- min level required to use the weaponcontrol command         
+        0 : guest
+        1 : user
+        2 : regular
+        20 : moderator
+        40 : admin
+        60 : fulladmin
+        80 : senioradmin
+        100 : superadmin
+      -->
+		<set name="weaponcontrol-wpctrl">60</set>
+	</settings>
+  
+	<!-- put '0' below to disallow a weapon, put '1' to allow -->
+	<settings name="weapons">
+		<set name="Beretta 92G">1</set>
+		<set name="Desert Eagle">1</set>
+		<set name="SPAS-12">1</set>
+		<set name="MP5K">1</set>
+		<set name="UMP45">1</set>
+		<set name="HK69">1</set>
+		<set name="LR300ML">1</set>
+		<set name="M4A1">1</set>
+		<set name="G36">1</set>
+		<set name="PSG-1">1</set>
+		<set name="SR-8">1</set>
+		<set name="AK-103">1</set>
+		<set name="Negev">1</set>
+		<set name="HE Grenade">1</set>
+		<set name="Smoke Grenade">1</set>
+		<set name="Kevlar Vest">1</set>
+		<set name="Kevlar Helmet">1</set>
+		<set name="Silencer">1</set>
+		<set name="Laser Sight">1</set>
+		<set name="Medkit">1</set>
+		<set name="NVGs">1</set>
+		<set name="Extra Ammo">1</set>
+	</settings>
+</configuration>

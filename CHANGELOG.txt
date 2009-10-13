@@ -1,0 +1,16 @@
+10/10/2008 - 0.1.0b
+ - first shot, beta version. Seems to work, waiting for feedback before moving on
+ 
+11/10/2008 - v0.2.0b
+ - add weaponcontrol command to change settings in-game
+ - add control over the M4A1 (missing in the Urban Terror manual)
+
+19/10/2008 - v0.2.1 - Courgette
+ - just updated the config file as it was missing the command section
+ 
+04/03/2009 - v0.3.0 - Courgette
+ - Fix bug with the AK.
+ - Add missing 'kevlar helmet'
+ - Now broadcast message when a weapon/item is allowed/disallowed
+ - Add 'admin guide'
+ - Add doc in french

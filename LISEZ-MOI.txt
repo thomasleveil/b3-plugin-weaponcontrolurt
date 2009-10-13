@@ -1,0 +1,73 @@
+weaponcontrolurt plugin for Big Brother Bot (www.bigbrotherbot.com)
+===================================================================
+
+Author: #UbU#Courgette
+Game: Urban Terror 4.1
+
+
+Description
+-----------
+
+Ce plugin permet de définir des armes ou items interdits sur votre serveur.
+
+
+Installation
+------------
+
+ * copier weaponcontrolurt.py dans b3/extplugins
+ * copier plugin_weaponcontrolurt.xml dans b3/extplugins/conf
+ * modifier b3.xml avec :
+<plugin name="weaponcontrolurt" priority="18" config="@b3/extplugins/conf/plugin_weaponcontrolurt.xml"/>
+(faire attention à ajuster la valeur de 'priority' convenablement)
+
+
+
+Utilisation
+----------- 
+
+Avertissement : l'abus de restrictions sur un serveur peut
+vite devenir exaspérant. Il est conseillé d'avertir tous 
+les joueurs se connectant des restrictions en cours par 
+un message.
+
+
+!weaponcontrol : affiche les restrictions courantes
+!weaponcontrol all : autorise tout
+!weaponcontrol reset : interdit les items qui ont '0' dans la config
+!weaponcontrol -ber : interdit le Beretta
+!weaponcontrol +ber : autorise le Beretta
+!weaponcontrol -de : interdit le Desert Eagle
+!weaponcontrol +de : autorise le Desert Eagle
+etc : 
+ les codes sont :
+ ber : Beretta 92G
+ de : Desert Eagle
+ spa : SPAS-12
+ mp : MP5K
+ ump : UMP45
+ hk : HK69
+ lr : LR300ML
+ g36 : G36
+ psg : PSG-1
+ sr : SR-8
+ ak : AK-103
+ neg : Negev
+ m4 : M-4
+ he : HE Grenade
+ smo : Smoke Grenade
+ kev : Kevlar Vest
+ hel : Kevlar Helmet
+ sil : Silencer
+ las : Laser Sight
+ med : Medkit
+ nvg : NVGs (lunettes de vision nocturne)
+ xtr ou ext: Extra Ammo
+ 
+ en fait les codes indiqués sont les 2-3 lettres minimum qui servent à interpréter ta commande. C-a-d que :
+ !weaponcontrol -sil
+est équivalente à 
+ !weaponcontrol -silencer
+Ca peut être pratique si tu n'est plus certain du code d'une arme.
+
+!help weaponcontrol : affiche un résumé des options disponibles
+
