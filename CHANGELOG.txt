@@ -14,3 +14,9 @@
  - Now broadcast message when a weapon/item is allowed/disallowed
  - Add 'admin guide'
  - Add doc in french
+ 
+21/12/2009 - 0.4 - Courgette
+- can work with Iourt41 1.7+ while keaping it compatible with pre-1.7
+- fix minor bug where forbidden weapon codes could be found multiple
+  times in the _forbiddenWeapons list.
+- add tests

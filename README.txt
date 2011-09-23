@@ -1,7 +1,7 @@
 weaponcontrolurt plugin for Big Brother Bot (www.bigbrotherbot.com)
 ===================================================================
 
-Author: #UbU#Courgette
+Author: Courgette
 Game: Urban Terror 4.1
 
 
