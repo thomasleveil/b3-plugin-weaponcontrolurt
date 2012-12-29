@@ -37,13 +37,16 @@
 # - fix minor bug where forbidden weapon codes could be found multiple
 #   times in the _forbiddenWeapons list.
 # - add tests
+# 28/12/2012 - 1.0 - Courgette
+# - fix bug that prevented the use of the !weaponcontrol command with argument '+m4' or '-m4'
+# - check game is not UrT 4.2
 #
 
 """
 Urban Terror doc on gear : http://www.urbanterror.net/urt_manual/gear.htm
 """
 
-__version__ = '0.4'
+__version__ = '1.0'
 __author__  = 'Courgette'
 
 import b3, re
@@ -102,7 +105,8 @@ class WeaponcontrolurtPlugin(b3.plugin.Plugin):
             self.registerEvent(b3.events.EVT_CLIENT_GEAR_CHANGE)
             self.registerEvent(b3.events.EVT_CLIENT_TEAM_CHANGE)
 
-
+        if self.console.gameName == 'iourt42':
+            self.critical("This plugin is meant to work with Urban Terror 4.1. Use plugin weaponcontrolurt42 for UrT4.2")
 
     def onLoadConfig(self):
         # get the admin plugin
@@ -231,7 +235,7 @@ class WeaponcontrolurtPlugin(b3.plugin.Plugin):
                 bit='a'
             elif data[1:4] == 'neg':
                 bit='c'
-            elif data[1:4] == 'm4':
+            elif data[1:3] == 'm4':
                 bit='e'
             elif data[1:4] == 'hel':
                 bit='W'

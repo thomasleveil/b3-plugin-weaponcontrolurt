@@ -20,3 +20,8 @@
 - fix minor bug where forbidden weapon codes could be found multiple
   times in the _forbiddenWeapons list.
 - add tests
+
+29/12/2012 - 1.0 - Courgette
+- check that the plugin is not running on UrT 4.2 (there is another plugin for this game)
+- fix bug that prevented the use of the !weaponcontrol command with argument '+m4' or '-m4'
+
